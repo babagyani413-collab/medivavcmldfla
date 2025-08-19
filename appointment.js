@@ -84,8 +84,17 @@ class AppointmentBooking {
         const platformFee = 29;
         const totalFee = consultationFee + platformFee;
 
-        document.getElementById('consultationFee').textContent = `₹${consultationFee}`;
-        document.getElementById('totalFee').textContent = `₹${totalFee}`;
+        const consultationFeeElement = document.getElementById('consultationFeeText');
+        const totalFeeElement = document.getElementById('totalFeeText');
+        const consultationFeeInput = document.getElementById('consultationFeeInput');
+        const doctorNameInput = document.getElementById('doctorName');
+        const doctorSpecialtyInput = document.getElementById('doctorSpecialty');
+        
+        if (consultationFeeElement) consultationFeeElement.textContent = `₹${consultationFee}`;
+        if (totalFeeElement) totalFeeElement.textContent = `₹${totalFee}`;
+        if (consultationFeeInput) consultationFeeInput.value = consultationFee;
+        if (doctorNameInput) doctorNameInput.value = this.selectedDoctor.name;
+        if (doctorSpecialtyInput) doctorSpecialtyInput.value = this.selectedDoctor.specialty;
     }
 
     setupForm() {

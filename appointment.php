@@ -91,6 +91,11 @@
                 <textarea class="form-control" id="symptoms" name="symptoms" rows="3" placeholder="Please describe your symptoms..."></textarea>
               </div>
 
+              <div class="mb-3">
+                <label for="medicalHistory" class="form-label">Medical History (Optional)</label>
+                <textarea class="form-control" id="medicalHistory" name="medicalHistory" rows="2" placeholder="Any relevant medical history..."></textarea>
+              </div>
+
               <div class="fee-summary mb-4">
                 <div class="d-flex justify-content-between">
                   <span>Consultation Fee:</span>

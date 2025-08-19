@@ -1,4 +1,3 @@
-login
 class UserProfile {
     constructor() {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
